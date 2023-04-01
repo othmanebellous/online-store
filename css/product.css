@@ -1,0 +1,129 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+   opacity: 1;
+}
+
+input[type=number]:focus{
+    outline: none;
+}
+
+.about-product-links{
+    gap: 30px;
+}
+
+.about-product-link{
+    display: block;
+    color: #838383;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-product-link::after{
+    content: "";
+    position: absolute;
+    top: calc(100% - 2px);
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background-color: #0156FF;
+}
+
+.about-product-link:not(.active):hover::after {
+    left: 0;
+    transition: 0.3s;
+}
+
+.about-product-link.active, .about-product-link:hover{
+    color: #000000;
+    transition: 0.3s;
+}
+
+.about-product-link.active::after{
+  left: 0;
+}
+
+.about-product{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.cta-area{
+    justify-content: flex-end;
+  }
+
+.on-sale{
+    gap: 4px;
+}
+
+.quantity-input{
+    width: 70px;
+    height: 50px;
+    margin: 26px 21px;
+    background-color: #F5F7FF;
+    border-radius: 6px;
+    padding: 16px;
+}
+
+.cta-area .blue-btn{
+    padding: 14px 35px;
+    margin-right: 13px;
+}
+
+.cta-area .yellow-btn{
+    padding: 16px 34px;
+}
+
+.product-nav-link:not(:last-child)::after{
+    content: ">";
+    position: relative;
+    top: 1px;
+    color: #0156FF;
+    margin:0 6px;
+    font-size: 12px;
+}
+
+.product-nav-link:last-child{
+    color: #A2A6B0;
+}
+
+
+@media (max-width:900px) {
+    .about-product-links{
+        gap: 18px;
+    }
+
+    .on-sale{
+        flex-direction: column;
+    }
+
+    .on-sale-text, .on-sale-price{
+        font-size: 12px;
+    }
+
+    .quantity-input{
+        width: 56px;
+        height: 42px;
+        margin: 14px 20px;
+    }
+
+    .cta-area .blue-btn {
+        padding: 8px 26px;
+        font-size: 13px;
+        margin-right: 7px;
+      }
+
+      .cta-area .yellow-btn {
+        padding: 10px 29px;
+      }
+
+      .quantity-input{
+        font-size: 11px;
+    }
+}
+
+@media (max-width:900px) {
+
+    .about-product-link{
+        font-size: 12px;
+    }
+}

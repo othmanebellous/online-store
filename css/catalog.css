@@ -7,11 +7,6 @@ h1{
     margin-bottom: 21px;
  }
 
-.hover-text-blue:hover{
-    color: #0156FF;
-    transition: 0.3s;
-}
-
 .current-page-links{
     padding-top: 19px;
     padding-bottom:19px ;
@@ -22,12 +17,8 @@ h1{
     position: relative;
     top: 1px;
     color: #0156FF;
-    margin-right: 6px;
+    margin:0 6px;
     font-size: 12px;
-}
-
-.page-link-anchor{
-    margin-right: 6px;
 }
 
 

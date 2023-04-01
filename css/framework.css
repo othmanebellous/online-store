@@ -219,4 +219,9 @@
     color: white;
   }
 
+  .hover-text-blue:hover{
+    color: #0156FF;
+    transition: 0.3s;
+}
+
   

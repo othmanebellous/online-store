@@ -3,6 +3,10 @@ h1{
     margin-bottom: 19px;
 }
 
+address{
+    font-style: normal;
+}
+
 .margin-btm-21{
     margin-bottom: 21px;
  }
@@ -180,6 +184,11 @@ input[type="radio"]:checked + label{
 .product-card {
     width: 229px;
     padding: 0 22px;
+    flex: 1;
+  }
+
+  .product-card p{
+    max-width: 180px;
   }
 
 
@@ -238,12 +247,17 @@ input[type="radio"]:checked + label{
     margin: 25px auto 0;
     border: 2px solid #A2A6B0;
     border-radius: 50px;
+    order: 2;
 }
 
 .more-btn:hover{
     background-color: #A2A6B0;
     color: #FFF;
     transition: 0.3s;
+}
+
+.more-input:checked + .long-paragraph::after{
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
 }
 
 .features{

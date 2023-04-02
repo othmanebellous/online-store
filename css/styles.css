@@ -57,11 +57,14 @@ nav{
     margin: 0 12px 0 16px;
   }
 
-  .extra-info{
+  .extra-info-holder{
     top: 100%;
+    z-index: 101;
+  }
+
+  .extra-info{
     width: 262px;
     border: 1px solid #CACDD8;
-    z-index: 100;
     cursor: auto;
   }
 
@@ -75,10 +78,9 @@ nav{
     color: #FFFFFF;
   }
 
-  .shop-info:hover .extra-info{
-    visibility: visible;
-    opacity: 1;
-    transition: 0.3s;
+  .shop-info:hover .extra-info-holder{
+    max-height: 500px;
+    transition: 0.3s ease-out;
   }
 
   .extra-info-content:not(:last-of-type){
@@ -142,6 +144,10 @@ nav{
     border-radius: 50px;
   }
 
+  .nav-link {
+    transition: 0.3s ease-in;
+  }
+
   .nav-link:hover .nav-anchor{
     padding: 8px 20px;
     color: white;
@@ -170,6 +176,7 @@ nav{
     transform: translateX(-50%);
     z-index: 100;
     padding-top: 26px;
+    pointer-events: none;
   }
 
   .mega-links-holder{
@@ -207,13 +214,13 @@ nav{
     width: 235px;
     min-height: 346px;
     padding: 0 25px;
-    transition: 0.3s;
+    transition: 0.3s ease-in;
   }
 
   .product-card:hover{
-    height: 400px;
+    min-height: 400px;
     box-shadow: 0px 5px 15px 0px #00000024;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
   }
 
   .product-img{
@@ -311,9 +318,12 @@ nav{
 
 
   .nav-link:hover .mega-menu, .mega-menu:hover{
-    visibility: visible;
-    opacity: 1;
-    transition: 0.3s;
+    max-height: 700px;
+    transition: 0.3s ease-out;
+  }
+
+  .nav-link:hover .mega-menu{
+    pointer-events: auto;
   }
 
 
@@ -323,6 +333,7 @@ nav{
     width: 262px;
     height: 100%;
     border-left: 1px solid #00000033;
+    transition: 0.3s ease-in;
   }
 
 
@@ -330,7 +341,7 @@ nav{
   .notebooks-item:hover .msi-list{
     visibility: visible;
     opacity: 1;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
   }
   
 
@@ -341,6 +352,7 @@ nav{
     top: 0;
     border: 1px solid;
     border-color: transparent #0003 transparent #0003;
+    transition: 0.3s ease-in;
    }
 
 
@@ -370,14 +382,17 @@ nav{
     font-weight: 700;
   }
 
-  .big-cart{
-    width: 310px;
+  .big-cart-menu{
     top: 100%;
     left: -198px;
+    z-index: 100;
+  }
+
+  .big-cart{
+    width: 310px;
     padding: 23px 0;
     border: 1px solid #CACDD8;
     cursor: auto;
-    z-index: 100;
    }
 
 
@@ -385,10 +400,9 @@ nav{
     border-bottom: 1px solid #CACDD8;
    }
 
-   .cart:hover .big-cart{
-    visibility: visible;
-    opacity: 1;
-    transition: 0.3s;
+   .cart:hover .big-cart-menu{
+    max-height: 700px;
+    transition: 0.3s ease-out;
    }
 
    .my-cart{
@@ -448,20 +462,22 @@ nav{
     padding: 27px 0;
   }
 
-   .account{
+  .account-menu{
     top: 100%;
     left: -179px;
+    z-index: 100;
+  }
+
+  .user:hover .account-menu{
+    max-height: 500px;
+    transition: max-height 0.3s ease-out;
+   }
+
+   .account{
     width: 232px;
     padding: 10px 0 5px 26px;
     cursor: auto;
     border: 1px solid #00000033;
-    z-index: 100;
-   }
-
-   .user:hover .account{
-    visibility: visible;
-    opacity: 1;
-    transition: 0.3s;
    }
 
    .account-anchor{
@@ -583,6 +599,7 @@ nav{
         color: #838383;
         position: relative;
         overflow: hidden;
+        transition: 0.3s ease-in;
        }
 
        .msi-product-link::after{
@@ -593,15 +610,17 @@ nav{
         width: 100%;
         height: 2px;
         background-color: #0156FF;
+        transition: 0.3s ease-in;
        }
 
        .msi-product-link:not(.active):hover::after {
         left: 0;
-        transition: 0.3s;
+        transition: 0.3s ease-out;
        }
     
        .msi-product-link.active, .msi-product-link:hover{
         color: #000000;
+        transition: 0.3s ease-out;
        }
 
        .msi-product-link.active{
@@ -735,6 +754,7 @@ nav{
         height: 50px;
         border: none;
         margin-left: 15px;
+        transition: 0.3s;
        }
     
        .footer-email::placeholder{
@@ -757,6 +777,10 @@ nav{
     
       .links-list-ul li{
         margin-bottom: 2.5px;
+        transition: 0.3s;
+      }
+
+      .links-list-ul a{
         transition: 0.3s;
       }
 
@@ -838,7 +862,7 @@ nav{
         font-size: 11px;
       }
 
-      .extra-info{
+      .extra-info-holder{
         width: 283px;
       }
 
@@ -905,12 +929,13 @@ nav{
         z-index: 100;
         visibility: hidden;
         opacity: 0;
+        transition: 0.3s ease-in;
     }
 
     .burger-icon:hover + .navigation-menu, .navigation-menu:hover{
         visibility: visible;
         opacity: 1;
-        transition: 0.3s;
+        transition: 0.3s ease-out;
     }
 
     .logo{
@@ -1017,7 +1042,7 @@ nav{
         color: #0156FF; 
       }
 
-      .big-cart{
+      .big-cart-menu{
         left: -213px;
       }
 
@@ -1026,7 +1051,7 @@ nav{
         margin-left: 29px;
       }
 
-      .account{
+      .account-menu{
         left: -184px;
       }
 
@@ -1218,6 +1243,7 @@ nav{
         margin-top: 26px;
         border-bottom: 1px solid #A2A6B0;
         cursor: pointer;
+        transition: 1s ease-in;
       }
 
       .links-heading::after{
@@ -1228,11 +1254,14 @@ nav{
         transition: 0.3s;
       }
 
+      .links-list-holder{
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.3s ease-out;
+      }
+
       .links-list-ul{
         padding: 0 0 12px 12.5px;
-        position: absolute;
-        visibility: hidden;
-        opacity: 0;
       }
 
       .links-list:hover{
@@ -1240,7 +1269,8 @@ nav{
       }
 
       .links-list:hover .links-heading{
-        border: none;
+        border-color: transparent;
+        transition: 0.3S ease-out;
       }
 
       .links-heading:hover:after{
@@ -1248,17 +1278,15 @@ nav{
         transition: 0.3s;
       }
 
-        .links-heading:hover + .links-list-ul,
-        .links-heading:hover + .links-list-ul,
-        .links-heading:hover + .links-list-ul,
-        .links-heading:hover + .links-list-ul,
-        .links-heading:hover + .links-list-ul,
-        .links-list-ul:hover
+        .links-heading:hover + .links-list-holder,
+        .links-heading:hover + .links-list-holder,
+        .links-heading:hover + .links-list-holder,
+        .links-heading:hover + .links-list-holder,
+        .links-heading:hover + .links-list-holder,
+        .links-list-holder:hover
         {
-            position: static;
-            visibility: visible;
-            opacity: 1;
-            transition: 1s;
+           max-height: 700px;
+            transition: 1s ease-out;
         }
 
     
@@ -1290,10 +1318,14 @@ nav{
         padding: 0 18px 0 96px;
       }
 
-      .extra-info{
+      .extra-info-holder{
         top: 100%;
         width: 100vw;
         left: -96px;
+      }
+
+      .extra-info{
+        width: 100%;
       }
 
       .extra-info-content{
@@ -1313,7 +1345,7 @@ nav{
         width: 100%;
       }
 
-      .big-cart {
+      .big-cart-menu{
         left: -220px;
     }
 
@@ -1345,7 +1377,7 @@ nav{
       }
 
       .new-products .product-card:hover {
-        height: 338px;
+        min-height: 338px;
     }
 
     .new-products .product-reviews span{
@@ -1505,6 +1537,10 @@ nav{
   @media (max-width:360px){
     .contact{
         display: none;
+    }
+
+    .partners{
+      justify-content: center;
     }
 
     .footer-email {

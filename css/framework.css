@@ -202,7 +202,7 @@
 
   /* --------transition------ */
   .transition-03s{
-    transition: 0.3s;
+    transition: 0.3s ease-in;
   }
 
 
@@ -222,6 +222,12 @@
   .hover-text-blue:hover{
     color: #0156FF;
     transition: 0.3s;
+}
+
+.drop-on-hover{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in;
 }
 
   

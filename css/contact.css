@@ -1,0 +1,193 @@
+address{
+    font-style: normal;
+}
+.contact-nav-links{
+    padding: 21px 0 19px;
+}
+
+.contact-nav-link:not(:last-child)::after{
+    content: ">";
+    position: relative;
+    top: 1px;
+    color: #0156FF;
+    margin:0 6px;
+    font-size: 12px;
+}
+
+.contact-nav-link:last-child{
+    color: #A2A6B0;
+}
+
+.contact-heading{
+    font-size: 32px;
+}
+
+.contact-us-p{
+    padding: 12px 0 21px;
+    line-height: 30px;
+}
+
+.contact-holder{
+    margin-bottom: 123px;
+    gap: 60px;
+}
+
+.contact-input-holder{
+    column-gap: 30px;
+}
+
+.required{
+    color: #C94D3F;
+}
+
+.contact-input{
+    width: 449px;
+    height: 50px;
+    border: 1px solid #A2A6B0;
+    border-radius: 4px;
+    padding-left: 17px;
+    margin: 16px 0;
+}
+
+.contact-input::placeholder{
+    color: #A2A6B0;
+}
+
+.note-area{
+    font-family: 'Poppins', sans-serif;
+    width: 925px;
+    height: 236px;
+    padding-top: 16px;
+}
+
+.contact-form-submit{
+    padding: 14px 50px;
+}
+
+.store-information{
+    padding: 26px 0 74px 31px;
+    background-color: #F5F7FF;
+    width: 411px;
+}
+
+.information-holder{
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.address.information-holder::before{
+    content: url(../images/contact-location.png);
+}
+
+.phone.information-holder::before{
+    content: url(../images/black-phone.png);
+}
+
+.working-time.information-holder::before{
+    content: url(../images/contact-clock.png);
+}
+
+.contact-email.information-holder::before{
+    content: url(../images/contact-email.png);
+}
+.info-h2{
+    margin-bottom: 5px;
+}
+
+.features-holder{
+    padding: 61px 0 44px;
+    background-color: #F5F7FF;
+}
+
+.features{
+    padding-bottom: 0;
+}
+
+
+@media (max-width:1431px){
+    .contact-heading{
+        font-size: 18px;
+    }
+
+    .contact-us-p{
+        font-size: 12px;
+        padding: 13px 0;
+        line-height: 22px;
+    }
+
+    .contact-holder {
+        margin-bottom: 34px;
+        gap: 26px;
+        justify-content: center;
+      }
+
+    .label-input-holder{
+        width: 100%;
+    }
+
+    .contact-label{
+        font-size: 11px;
+    }
+
+    .contact-input{
+        font-size: 12px;
+        padding-left: 14px;
+        margin: 12px 0;
+        width: 100%;
+    }
+
+    .note-area{
+        height: 145px;
+        padding-top: 14px;
+    }
+
+    .store-information{
+        width: 344px;
+        padding: 26px 0 32px 31px;
+        flex-shrink: 0;
+    }
+
+    .information-holder{
+        margin-bottom: 14px;
+        gap: 15px;
+    }
+    .info-h2{
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+
+    .info-text{
+        font-size: 11px;
+    }
+
+    .contact-form-submit {
+        padding: 8px 41px;
+      }
+
+      .features-holder{
+        padding: 39px 0 37px;
+    }
+}
+
+
+@media (max-width:715px){
+    .contact-us-p{
+        padding: 10px 0 16px;
+    }
+    .contact-holder{
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 28px;
+    }
+    .contact-form {
+        width: 100%;
+    }
+
+    .store-information {
+        width: 100%;
+    }
+
+    .features-holder{
+        padding: 26px 0 25px;
+    }
+}

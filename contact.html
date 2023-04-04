@@ -9,7 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/framework.css">
         <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/product.css">
+        <link rel="stylesheet" href="css/contact.css">
         <title>Tech Online Store</title>
     </head>
     <body>
@@ -47,7 +47,7 @@
                     </div>
                     <div class="contact flex-center ">
                         <p class="contact-p tablet-hide font-size-12 semi-bold">Visit our showroom in 1234 Street Adress City Address, 1234</p>
-                        <a class="contact-a text-white font-size-12 semi-bold" href="contact.html">Contact Us</a>
+                        <a class="contact-a text-white font-size-12 semi-bold" href="#">Contact Us</a>
                     </div>
                     <div class="social flex-center tablet-hide">
                         <span class="text-white font-size-12 semi-bold">Call Us: (00) 1234 5678</span>
@@ -840,130 +840,65 @@
             </div>
         </header>
         <main>
-            <section class="about-product flex-column relative">
-                <div class="product-links-holder flex-btwn-center container full-width">
-                    <div class="about-product-links flex-center">
-                        <a class="about-product-link font-size-14 semi-bold active transition-03s" href="">About Product</a>
-                        <a class="about-product-link font-size-14 semi-bold transition-03s" href="">Details</a>
-                        <a class="about-product-link font-size-14 semi-bold transition-03s" href="">Specs</a>
-                    </div>
-                    <div class="cta-area flex-center">
-                        <div class="on-sale flex-center">
-                            <p class="on-sale-text font-size-14">On Sale from </p>
-                            <strong class="on-sale-price font-size-14">$3,299.00</strong>
-                        </div>
-                        <div class="cta-buttons flex-center">
-                            <input class="quantity-input font-size-13 semi-bold no-border" type="number" name="quantity" id="" value="1" min="1">
-                            <a class="blue-btn font-size-14 semi-bold d-block scale transition-03s" href="#">Add to Cart</a>
-                            <a class="yellow-btn flex-center-center scale transition-03s" href="#"><img src="images/paypal.png" alt=""></a>
-                    </div>
-                    </div>
+            <div class="container">
+                <div class="contact-nav-links flex-center">
+                    <a class="contact-nav-link font-size-12 hover-text-blue transition-03s" href="index.html">Home</a>
+                    <a class="contact-nav-link font-size-12 hover-text-blue transition-03s" href="contact.html">Contact Us</a>
                 </div>
-                <div class="product-content-holder relative">
-                    <div class="container flex-center">
-                        <div class="product-information">
-                            <div class="product-nav-links flex-center mobile-hide infos-margin">
-                                <a class="product-nav-link font-size-12 hover-text-blue transition-03s" href="index.html">Home</a>
-                                <a class="product-nav-link font-size-12 hover-text-blue transition-03s" href="catalog.html">Laptops</a>
-                                <a class="product-nav-link font-size-12 hover-text-blue transition-03s" href="">MSI WS Series</a>
+                <h1 class="contact-heading semi-bold">Contact Us</h1>
+                <p class="contact-us-p font-size-16 light">We love hearing from you, our Shop customers. <br>
+                   Please contact us and we will make sure to get back to you as soon as we possibly can.
+                </p>
+                <div class="contact-holder flex-start">
+                    <form class="contact-form" action="">
+                        <div class="contact-input-holder flex-start wrap">
+                            <div class="label-input-holder">
+                                <label class="contact-label font-size-13 semi-bold" for="name">Your Name <span class="required">*</span></label>
+                                <input class="contact-input font-size-14 light d-block" type="text" name="name" id="name" placeholder="Your Name" required>
                             </div>
-                            <h1 class="product-title medium">MSI MPG Trident 3</h1>
-                            <p class="review-p text-blue font-size-12 infos-margin">Be the first to review this product</p>
-                            <p class="product-description font-size-18 light">MSI MPG Trident 3 10SC-005AU Intel i7 10700F, 2060 SUPER, 16GB RAM, 512GB SSD, 2TB HDD, Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty Gaming Desktop</p>
-                            <div class="product-colors infos-margin">
-                                <input class="color-input display-none" type="radio" name="color" id="grey">
-                                <label class="color-label color-grey radius-50 cursor-pointer inline-block" for="grey"></label>
-                                <input class="color-input display-none" type="radio" name="color" id="light-pink" checked>
-                                <label class="color-label color-light-pink radius-50 cursor-pointer inline-block" for="light-pink"></label>
-                                <input class="color-input display-none" type="radio" name="color" id="light-grey" checked>
-                                <label class="color-label color-light-grey radius-50 cursor-pointer inline-block" for="light-grey"></label>
-                            </div>
-                            <div class="flex-btwn-center infos-margin">
-                                <p class="question font-size-12 semi-bold">Have a Question? <a class="question-a text-blue normal" href="contact-us.html">Contact Us</a></p>
-                                <span class="font-size-12 light">SKU D5515AI</span>
-                            </div>
-                            <a href="" class="more-information font-size-18 bold d-block tablet-hide"><span class="font-size-14 normal">+ </span> More information</a>
-                        </div>
-                        <div class="product-images flex-start">
-                            <div class="product-actions">
-                                <button class="action-btn d-block bg-white no-border cursor-pointer scale transition-03s"><img src="images/heart.png" alt=""></button>
-                                <button class="action-btn d-block bg-white no-border cursor-pointer scale transition-03s"><img src="images/stats.png" alt=""></button>
-                                <button class="action-btn d-block bg-white no-border cursor-pointer scale transition-03s"><img src="images/message.png" alt=""></button>
-                            </div>
-                            <div class="grow">
-                                <img class="product-image" src="images/msi-desktop.png" alt="">
-                                <div class="product-zip flex-center">
-                                    <img class="zip-img" src="images/zip.png" alt="">
-                                    <p class="product-zip-p font-size-12 relative">own it now, up to 6 months interest free
-                                    <a class="underline font-size-12 light text-black" href="">learn more</a>
-                                    </p>
-                                </div>
-                                <div class="images-changer flex-btwn-center mobile-hide">
-                                    <span class="image-changer current-image radius-50 cursor-pointer scale"></span>
-                                    <span class="image-changer scale radius-50 cursor-pointer scale"></span>
-                                    <span class="image-changer scale radius-50 cursor-pointer scale"></span>
-                                </div>
+                            <div class="label-input-holder">
+                                <label class="contact-label font-size-13 semi-bold" for="email">Your Email <span class="required">*</span></label>
+                                <input class="contact-input font-size-14 light d-block" type="email" name="email" id="email" placeholder="Your Email" required>
                             </div>
                         </div>
-                    </div>
+                        <label class="contact-label font-size-13 semi-bold" for="phone">Your Phone Number</label>
+                        <input class="contact-input font-size-14 light d-block" type="tel" name="phone" id="phone" placeholder="Your Phone">
+                        <label class="contact-label font-size-13 semi-bold" for="note">What’s on your mind? <span class="required">*</span></label>
+                        <textarea class="note-area contact-input font-size-14 light d-block" name="note" id="note" placeholder="Jot us a note and we’ll get back to you as quickly as possible" required></textarea>
+                        <input class="contact-form-submit blue-btn font-size-14 semi-bold d-block cursor-pointer scale no-border" type="submit" value="Submit">
+                    </form>
+                    <ul class="store-information">
+                        <li class="address information-holder flex-start">
+                            <address>
+                                <h2 class="info-h2 font-size-18 semi-bold">Address:</h2>
+                                <span class="info-text font-size-13">1234 Street Adress City Address, 1234</span>
+                            </address>
+                        </li>
+                        <li class="phone information-holder flex-start">
+                            <div>
+                                <h2 class="info-h2 font-size-18 semi-bold">Phone:</h2>
+                                <a class="info-text font-size-13" href="tel:(00)1234 5678">(00)1234 5678</a>
+                            </div>
+                        </li>
+                        <li class="working-time information-holder flex-start">
+                            <div>
+                                <h2 class="info-h2 font-size-18 semi-bold">We are open:</h2>
+                                <span class="info-text font-size-13">
+                                    Monday - Thursday: 9:00 AM - 5:30 PM <br>
+                                    Friday 9:00 AM - 6:00 PM<br>
+                                    Saturday: 11:00 AM - 5:00 PM<br>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="contact-email information-holder flex-start">
+                            <div>
+                                <h2 class="info-h2 font-size-18 semi-bold">E-mail:</h2>
+                                <a class="info-text font-size-13 text-blue" href="mailto:shop@email.com">shop@email.com</a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </section>
-            <section class="product-slider">
-                <div class="container">
-                    <div class="product-slider-holder relative">
-                        <h2 class="slider-heading medium text-white infos-margin relative">Outplay the <br> Competittion</h2>
-                        <p class="product-slider-p font-size-18 light text-white infos-margin relative">
-                            Experience a 40% boost in computing from last generation. MSI Desktop equips the 10th Gen. Intel® Core™ i7 processor with the upmost computing power to bring you an unparalleled gaming experience. <br>
-                            <br>
-                            *Performance compared to i7-9700. Specs varies by model.
-                        </p>
-                        <div class="images-changer flex-btwn-center relative">
-                            <span class="image-changer current-image radius-50 cursor-pointer scale"></span>
-                            <span class="image-changer scale radius-50 cursor-pointer scale"></span>
-                            <span class="image-changer scale radius-50 cursor-pointer scale"></span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="support">
-                <div class="support-holder container">
-                    <a class="rectangle-shape flex-btwn-center font-size-16 medium bg-white" href="">Product Support</a>
-                    <a class="rectangle-shape flex-btwn-center font-size-16 medium bg-white" href="">FAQ</a>
-                    <a class="rectangle-shape flex-btwn-center font-size-16 medium bg-white" href="">Our Buyer Guide</a>
-                </div>
-            </section>
-            <section class="product-features text-white text-center">
-                <h2 class="product-features-heading medium">Features</h2>
-                <p class="product-features-p font-size-18 light">The MPG series brings out the best in gamers by allowing full expression in color with advanced RGB lighting control and synchronization.</p>
-                <div class="product-features-holder flex-start-center wrap">
-                    <div class="product-feature flex-column">
-                        <div class="feature-image flex-center-center radius-50">
-                            <img src="images/intel.png" alt="">
-                        </div>
-                        <p class="product-feature-p font-size-14 light"><span class="bold">Intel® Core™ i7</span> processor with the upmost computing power to bring you an unparalleled gaming experience.</p>
-                    </div>
-                    <div class="product-feature flex-column">
-                        <div class="feature-image flex-center-center radius-50">
-                            <img src="images/rtx.png" alt="">
-                        </div>
-                        <p class="product-feature-p font-size-14 light">
-                            The new <span class="bold">GeForce® RTX SUPER™</span> Series has more cores and higher clocks for superfast performance compared to previous-gen GPUs.
-                        </p>
-                    </div>
-                    <div class="product-feature flex-column">
-                        <div class="feature-image flex-center-center radius-50">
-                            <img src="images/ssd.png" alt="">
-                        </div>
-                        <p class="product-feature-p font-size-14 light">Unleash the full potential with the latest <span class="bold">SSD technology</span>, the NVM Express. 6 times faster than traditional SATA SSD.</p>
-                    </div>
-                    <div class="product-feature flex-column">
-                        <div class="feature-image flex-center-center radius-50">
-                            <img src="images/ddr.png" alt="">
-                        </div>
-                        <p class="product-feature-p font-size-14 light">Featuring the latest <span class="bold">10th Gen Intel® Core™</span> processors, memory can support up to DDR4 2933MHz to delivers an unprecedented gaming experience.</p>
-                    </div>
-                </div>
-            </section>
+            </div>
             <section class="features-holder">
                 <div class="features container flex-start-center wrap text-center">
                     <div class="feature">
@@ -1013,7 +948,7 @@
                                 <li class="font-size-13"><a class="text-white" href="#">Search</a></li>
                                 <li class="font-size-13"><a class="text-white" href="#">Terms</a></li>
                                 <li class="font-size-13"><a class="text-white" href="#">Orders and Returns</a></li>
-                                <li class="font-size-13"><a class="text-white" href="contact.html">Contact Us</a></li>
+                                <li class="font-size-13"><a class="text-white" href="#">Contact Us</a></li>
                                 <li class="font-size-13"><a class="text-white" href="#">Advanced Search</a></li>
                                 <li class="font-size-13"><a class="text-white" href="#">Newsletter Subscription</a></li>
                             </ul>
@@ -1097,4 +1032,4 @@
             </div>
         </footer>
     </body>
-</html>    
+</html>            

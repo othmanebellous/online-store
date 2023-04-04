@@ -549,6 +549,7 @@ input[type=number]:focus{
     .cta-area{
         flex-direction: column;
         gap: 10px;
+        width: 100%;
     }
 
     .quantity-input {

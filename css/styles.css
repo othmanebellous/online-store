@@ -546,6 +546,8 @@ nav{
     height: 23px;
     border: 1px solid #00AEB8;
     left: -14px;
+    top: 50%;
+    transform: translateY(-50%);
    }
 
    .zip-anchor{
@@ -713,7 +715,12 @@ nav{
        }
 
        .features{
-        padding: 0 187px 44px;
+        padding-bottom: 44px;
+        gap: 130px;
+       }
+
+       .feature{
+        min-width: 265px;
        }
     
        .feature-text{
@@ -1169,8 +1176,13 @@ nav{
        }
 
        .features{
-        padding: 0 0 37px;
+        padding-bottom: 37px;
+        column-gap: 22px;
         row-gap: 21px;
+       }
+
+       .feature{
+        min-width: 225px;
        }
     
        .feature-text{
@@ -1472,8 +1484,12 @@ nav{
     }
 
     .features{
-        padding: 0 0 25px;
+        padding-bottom: 25px;
         justify-content: center;
+       }
+
+       .feature{
+        min-width: 265px;
        }
     
        .feature-text{

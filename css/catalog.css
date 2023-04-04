@@ -260,10 +260,14 @@ input[type="radio"]:checked + label{
     background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
 }
 
-.features{
-    padding: 61px 187px 44px;
+.features-holder{
+    padding: 61px 0 44px;
     margin-top: 35px;
     background-color: #F5F7FF;
+}
+
+.features{
+    padding-bottom: 0;
 }
 
 
@@ -321,7 +325,7 @@ input[type="radio"]:checked + label{
     }
 
        .product-card:hover {
-        height: 338px;
+        min-height: 338px;
     }
 
      .product-reviews span{
@@ -369,7 +373,7 @@ input[type="radio"]:checked + label{
         margin: 12px auto 0;
     }
 
-    .features{
+    .features-holder{
         padding: 39px 0 37px;
         margin-top: 23px;
     }
@@ -449,7 +453,7 @@ input[type="radio"]:checked + label{
         display: block;
     }
 
-    .features{
+    .features-holder{
         padding: 26px 0 25px;
         margin-top: 43px;
     }

@@ -9,7 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/framework.css">
         <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/catalog.css">
+        <link rel="stylesheet" href="css/cart.css">
         <title>Tech Online Store</title>
     </head>
     <body>
@@ -831,7 +831,7 @@
                                     <a class="account-anchor font-size-14 medium d-block" href="#"> My Wish List (0)</a>
                                     <a class="account-anchor font-size-14 medium d-block" href="#">Compare (0)</a>
                                     <a class="account-anchor font-size-14 medium d-block" href="#">Create an Account</a>
-                                    <a class="account-anchor font-size-14 medium d-block" href="login.html">Sign In</a>
+                                    <a class="account-anchor font-size-14 medium d-block" href="#">Sign In</a>
                                 </div>
                             </div>
                         </div>
@@ -841,714 +841,130 @@
         </header>
         <main>
             <div class="container">
-                <img class="full-width mobile-hide" src="/images/catalog-img.png" alt="">
-                <ul class="current-page-links flex-center wrap">
-                    <li class="page-link"><a class="page-link-anchor hover-text-blue font-size-12" href="index.html">Home</a></li>
-                    <li class="page-link"><a class="page-link-anchor hover-text-blue font-size-12" href="#">Laptops</a></li>
-                    <li class="page-link"><a class="page-link-anchor hover-text-blue font-size-12" href="#">Everyday Use Notebooks</a></li>
-                    <li class="page-link"><a class="page-link-anchor hover-text-blue font-size-12" href="#">MSI Prestige Series</a></li>
-                    <li class="page-link"><a class="page-link-anchor hover-text-blue font-size-12 current-page" href="#">MSI WS Series</a></li>
-                </ul>
-                <h1 class="semi-bold">MSI PS Series (20)</h1>
-                <div class="catalog-holder">
-                    <div class="left-side">
-                        <a class="back tablet-hide font-size-14 semi-bold d-block text-center hover-text-blue" href="index.html">&lt; back</a>
-                        <div class="search-filters mobile-hide left-side-element">
-                            <h2 class="font-size-16 text-center">Filters</h2>
-                            <button class="clear-search grey-btn btn-shape font-size-14  semi-bold d-block mobile-hide">Clear Filter</button>
-                            <h3 class="filter-heading font-size-14 semi-bold cursor-pointer relative">Category</h3>
-                            <ul class="filter-list">
-                                <li><a class="filter-link flex-btwn-center font-size-13 hover-text-blue" href="#">CUSTOM PCS <span>15</span></a></li>
-                                <li><a class="filter-link flex-btwn-center font-size-13 hover-text-blue" href="#">MSI ALL-IN-ONE PCS <span>45</span></a></li>
-                                <li><a class="filter-link flex-btwn-center font-size-13 hover-text-blue" href="#">HP/COMPAQ PCS <span>1</span></a></li>
-                            </ul>
-                            <h3 class="filter-heading font-size-14 semi-bold cursor-pointer relative">Price</h3>
-                            <ul class="filter-list">
-                                <li><a class="filter-link flex-btwn-center font-size-13 hover-text-blue" href="#">$0.00 - $1,000.00 <span>19</span></a></li>
-                                <li><a class="filter-link flex-btwn-center font-size-13 hover-text-blue" href="#">$1,000.00 - $2,000.00<span>21</span></a></li>
-                                <li><a class="filter-link flex-btwn-center font-size-13 hover-text-blue" href="#">$2,000.00 - $3,000.00<span>9</span></a></li>
-                                <li><a class="filter-link flex-btwn-center font-size-13 hover-text-blue" href="#">$3,000.00 - $4,000.00<span>6</span></a></li>
-                                <li><a class="filter-link flex-btwn-center font-size-13 hover-text-blue" href="#">$4,000.00 - $5,000.00<span>3</span></a></li>
-                                <li><a class="filter-link flex-btwn-center font-size-13 hover-text-blue" href="#">$5,000.00 - $6,000.00<span>1</span></a></li>
-                                <li><a class="filter-link flex-btwn-center font-size-13 hover-text-blue" href="#">$6,000.00 - $7,000.00<span>1</span></a></li>
-                                <li><a class="filter-link flex-btwn-center font-size-13 hover-text-blue" href="#">$7,000.00 And Above<span>1</span></a></li>
-                            </ul>
-                            <h3 class="filter-heading font-size-14 semi-bold cursor-pointer relative">Color</h3>
-                            <input class="display-none" type="radio" name="color" id="black">
-                            <label class="color-label color-black radius-50 cursor-pointer inline-block" for="black"></label>
-                            <input class="display-none" type="radio" name="color" id="red" checked>
-                            <label class="color-label color-red radius-50 cursor-pointer inline-block" for="red"></label>
-                            <h3 class="filter-heading font-size-14 semi-bold cursor-pointer relative">Filter Name</h3>
-                            <button class="blue-btn btn-shape font-size-14 semi-bold no-border scale">Apply Filters (2)</button>
+                <div class="cart-nav-links flex-center">
+                    <a class="cart-nav-link font-size-12 hover-text-blue transition-03s" href="index.html">Home</a>
+                    <a class="cart-nav-link font-size-12 hover-text-blue transition-03s" href="cart.html">Cart</a>
+                </div>
+                <h1 class="cart-heading semi-bold">Shopping Cart</h1>
+                <div class="cart-holder flex-start">
+                    <div class="cart-items">
+                        <div class="cart-headings flex-center tablet-hide">
+                            <span class="cart-item-heading grow font-size-14 semi-bold">Item</span>
+                            <span class="cart-item-heading font-size-14 semi-bold">Price</span>
+                            <span class="cart-item-heading font-size-14 semi-bold">Qty</span>
+                            <span class="cart-item-heading cart-item-subtotal font-size-14 semi-bold">Subtotal</span>
                         </div>
-                        <div class="brands mobile-hide left-side-element">
-                            <h2 class="font-size-16 text-c">Brands</h2>
-                            <button class="grey-btn btn-shape font-size-14  semi-bold d-block">All Brands</button>
-                        </div>
-                        <div class="brand-logos mobile-hide flex-center wrap">
-                            <div class="brand-logo">
-                                <a href=""><img class="full-width scale" src="images/logo-1.png" alt=""></a>
+                        <div class="cart-item">
+                            <div class="cart-product-item flex-start">
+                                <img src="images/cart-product.png" alt="">
+                                <p class="cart-item-description font-size-14">
+                                    MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 SUPER, 32GB RAM, 1TB SSD, Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty
+                                </p>
                             </div>
-                            <div class="brand-logo">
-                                <a href=""><img class="full-width scale" src="images/logo-2.png" alt=""></a>
+                            <span class="cart-item-heading cart-item-price font-size-14 semi-bold display-none tablet-visible">Price</span>
+                            <span class="cart-item-heading cart-item-qty font-size-14 semi-bold display-none tablet-visible">Qty</span>
+                            <span class="cart-item-heading cart-item-subtotal font-size-14 semi-bold display-none tablet-visible">Subtotal</span>
+                            <strong class="cart-price-number font-size-14">$4,349.00</strong>
+                            <div class="">
+                              <input class="quantity-input font-size-13 semi-bold no-border" type="number" name="quantity" id="" value="1" min="1">
                             </div>
-                            <div class="brand-logo">
-                                <a href=""><img class="full-width scale" src="images/logo-4.png" alt=""></a>
-                            </div>
-                            <div class="brand-logo">
-                                <a href=""><img class="full-width scale" src="images/logo-5.png" alt=""></a>
-                            </div>
-                            <div class="brand-logo">
-                                <a href=""><img class="full-width scale" src="images/logo-6.png" alt=""></a>
-                            </div>
-                            <div class="brand-logo">
-                                <a href=""><img class="full-width scale" src="images/logo-7.png" alt=""></a>
+                            <strong class="cart-price-subtotal font-size-14">$13,047.00</strong>
+                            <div class="update-cart-item flex-column">
+                                <img class="remove-img d-block cursor-pointer scale" src="images/remove.png" alt="">
+                                <img class="cursor-pointer scale" src="images/edit.png" alt="">
                             </div>
                         </div>
-                        <div class="compare-products left-side-element">
-                            <h2 class="font-size-16 text-center margin-btm-21">Compare Products</h2>
-                            <p class="font-size-13">You have no items to compare.</p>
-                        </div>
-                        <div class="wish-list text-center left-side-element">
-                            <h2 class="font-size-16 margin-btm-21">My Wish List</h2>
-                            <p class="font-size-13">You have no items in your wish list.</p>
-                        </div>
-                        <a href="#"><img src="images/chair.png" alt=""></a>
-                    </div>    
-                    <div class="righ-side grow">
-                        <div class="items-holder flex-btwn-center">
-                            <p class="items-nubmer font-size-13">Items 1-35 of 61</p>
-                            <div class="flex-center">
-                                <button class="filter-btn semi-bold text-center grey-border bg-white display-none cursor-pointer">filter</button>
-                                <div class="sort-by grey-border">
-                                    <label class="sort-by-label font-size-13 semi-bold" for="sort-by">Sort By:</label>
-                                    <select class="font-size-13 semi-bold no-border cursor-pointer" name="sort-by" id="sort-by">
-                                        <option class="font-size-13 semi-bold" value="1">Position</option>
-                                        <option class="font-size-13 semi-bold" value="2">Price</option>
-                                        <option class="font-size-13 semi-bold" value="3">Newest</option>
-                                        <option class="font-size-13 semi-bold" value="4">Oldest</option>
-                                        <option class="font-size-13 semi-bold" value="5">All</option>
-                                    </select>
-                                </div>
-                                <div class="show tablet-hide grey-border">
-                                    <label class="show-label font-size-13 semi-bold" for="show">Show:</label>
-                                    <select class="font-size-13 semi-bold no-border cursor-pointer" name="show" id="show">
-                                        <option class="font-size-13 semi-bold" value="1">35 per page</option>
-                                        <option class="font-size-13 semi-bold" value="2">50 per page</option>
-                                        <option class="font-size-13 semi-bold" value="3">75 per page</option>
-                                        <option class="font-size-13 semi-bold" value="4">100 per page</option>
-                                        <option class="font-size-13 semi-bold" value="5">All</option>
-                                    </select>
-                                </div>
-                                <button class="grid-icon cursor-pointer mobile-hide no-border bg-white"><img src="images/grid.png" alt=""></button>
-                                <button class="list-icon cursor-pointer mobile-hide no-border bg-white"><img src="images/list.png" alt=""></button>
+                        <div class="cart-item">
+                            <div class="cart-product-item flex-start">
+                                <img src="images/cart-product-1.png" alt="">
+                                <p class="cart-item-description font-size-14">
+                                    MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 SUPER, 32GB RAM, 1TB SSD, Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty
+                                </p>
+                            </div>
+                            <span class="cart-item-heading cart-item-price font-size-14 semi-bold display-none tablet-visible">Price</span>
+                            <span class="cart-item-heading cart-item-qty font-size-14 semi-bold display-none tablet-visible">Qty</span>
+                            <span class="cart-item-heading font-size-14 semi-bold display-none tablet-visible">Subtotal</span>
+                            <strong class="cart-price-number font-size-14">$4,349.00</strong>
+                            <div class="">
+                              <input class="quantity-input font-size-13 semi-bold no-border" type="number" name="quantity" id="" value="1" min="1">
+                            </div>
+                            <strong class=" cart-price-subtotal font-size-14">$13,047.00</strong>
+                            <div class=" update-cart-item flex-column">
+                                <img class="remove-img d-block cursor-pointer scale" src="images/remove.png" alt="">
+                                <img class="cursor-pointer scale" src="images/edit.png" alt="">
                             </div>
                         </div>
-                        <div class="choices tablet-hide flex-center">
-                            <div class="choice grey-border flex-center">
-                                <p class="font-size-13">CUSTOM PCS <span>(24)</span></p>
-                                <button class="choice-btn no-border cursor-pointer bg-white"><img src="images/clear.png" alt=""></button>
-                            </div>
-                            <div class="choice grey-border flex-center">
-                                <p class="font-size-13">HP/COMPAQ PCS <span>(24)</span></p>
-                                <button class="choice-btn no-border cursor-pointer bg-white"><img src="images/clear.png" alt=""></button>
-                            </div>
-                            <button class="clear-all font-size-13 grey-border d-block bg-white cursor-pointer ">Clear All</button>
-                        </div>
-                        <div class="products flex-center relative wrap">
-                            <div class="product-card cursor-pointer relative">
-                                <div class="in-stock flex-center ">
-                                    <div class="circle flex-center-center"><img src="images/check.png"></div>
-                                    <span class="availability">in stock</span>
-                                </div>
-                                <img class="product-img cursor-pointer" src="images/lap-1.png" alt="">
-                                <div class="product-reviews flex-center">
-                                    <div class="stars flex-center">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/grey-star.png" alt="">
-                                    </div>
-                                    <span class="font-size-12 text-grey">Reviews (4)</span>
-                                </div>
-                                <p class="font-size-13">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                                <div class="price">
-                                    <del class="d-block">$499.00</del>
-                                    <strong>$499.00</strong>
-                                </div>
-                                <img class="heart visibility-hidden absolute cursor-pointer scale" src="images/heart.png" alt="">
-                                <img class="stats visibility-hidden absolute cursor-pointer scale" src="images/stats.png" alt="">
-                                <button class="product-cart white-btn transition-03s bg-white visibility-hidden flex-center-center cursor-pointer scale">
-                                
-                                Add To Cart
-                                </button>
-                            </div>
-                            <div class="product-card cursor-pointer relative">
-                                <div class="in-stock flex-center ">
-                                    <div class="circle flex-center-center"><img src="images/check.png"></div>
-                                    <span class="availability">in stock</span>
-                                </div>
-                                <img class="product-img cursor-pointer" src="images/lap-2.png" alt="">
-                                <div class="product-reviews flex-center">
-                                    <div class="stars flex-center">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/grey-star.png" alt="">
-                                    </div>
-                                    <span class="font-size-12 text-grey">Reviews (4)</span>
-                                </div>
-                                <p class="font-size-13">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                                <div class="price">
-                                    <del class="d-block">$499.00</del>
-                                    <strong>$499.00</strong>
-                                </div>
-                                <img class="heart visibility-hidden absolute cursor-pointer scale" src="images/heart.png" alt="">
-                                <img class="stats visibility-hidden absolute cursor-pointer scale" src="images/stats.png" alt="">
-                                <button class="product-cart white-btn transition-03s bg-white visibility-hidden flex-center-center cursor-pointer scale">
-                                
-                                Add To Cart
-                                </button>
-                            </div>
-                            <div class="product-card cursor-pointer relative">
-                                <div class="in-stock flex-center ">
-                                    <div class="circle flex-center-center"><img src="images/check.png"></div>
-                                    <span class="availability">in stock</span>
-                                </div>
-                                <img class="product-img cursor-pointer" src="images/lap-3.png" alt="">
-                                <div class="product-reviews flex-center">
-                                    <div class="stars flex-center">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/grey-star.png" alt="">
-                                    </div>
-                                    <span class="font-size-12 text-grey">Reviews (4)</span>
-                                </div>
-                                <p class="font-size-13">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                                <div class="price">
-                                    <del class="d-block">$499.00</del>
-                                    <strong>$499.00</strong>
-                                </div>
-                                <img class="heart visibility-hidden absolute cursor-pointer scale" src="images/heart.png" alt="">
-                                <img class="stats visibility-hidden absolute cursor-pointer scale" src="images/stats.png" alt="">
-                                <button class="product-cart white-btn transition-03s bg-white visibility-hidden flex-center-center cursor-pointer scale">
-                                
-                                Add To Cart
-                                </button>
-                            </div>
-                            <div class="product-card cursor-pointer relative">
-                                <div class="in-stock flex-center ">
-                                    <div class="circle flex-center-center"><img src="images/check.png"></div>
-                                    <span class="availability">in stock</span>
-                                </div>
-                                <img class="product-img cursor-pointer" src="images/lap-4.png" alt="">
-                                <div class="product-reviews flex-center">
-                                    <div class="stars flex-center">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/grey-star.png" alt="">
-                                    </div>
-                                    <span class="font-size-12 text-grey">Reviews (4)</span>
-                                </div>
-                                <p class="font-size-13">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                                <div class="price">
-                                    <del class="d-block">$499.00</del>
-                                    <strong>$499.00</strong>
-                                </div>
-                                <img class="heart visibility-hidden absolute cursor-pointer scale" src="images/heart.png" alt="">
-                                <img class="stats visibility-hidden absolute cursor-pointer scale" src="images/stats.png" alt="">
-                                <button class="product-cart white-btn transition-03s bg-white visibility-hidden flex-center-center cursor-pointer scale">
-                                
-                                Add To Cart
-                                </button>
-                            </div>
-                            <div class="product-card cursor-pointer relative tablet-hide">
-                                <div class="in-stock flex-center ">
-                                    <div class="circle flex-center-center"><img src="images/check.png"></div>
-                                    <span class="availability">in stock</span>
-                                </div>
-                                <img class="product-img cursor-pointer" src="images/lap-5.png" alt="">
-                                <div class="product-reviews flex-center">
-                                    <div class="stars flex-center">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/grey-star.png" alt="">
-                                    </div>
-                                    <span class="font-size-12 text-grey">Reviews (4)</span>
-                                </div>
-                                <p class="font-size-13">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                                <div class="price">
-                                    <del class="d-block">$499.00</del>
-                                    <strong>$499.00</strong>
-                                </div>
-                                <img class="heart visibility-hidden absolute cursor-pointer scale" src="images/heart.png" alt="">
-                                <img class="stats visibility-hidden absolute cursor-pointer scale" src="images/stats.png" alt="">
-                                <button class="product-cart white-btn transition-03s bg-white visibility-hidden flex-center-center cursor-pointer scale">
-                                
-                                Add To Cart
-                                </button>
-                            </div>
-                            <div class="product-card cursor-pointer relative">
-                                <div class="in-stock flex-center ">
-                                    <div class="circle flex-center-center"><img src="images/check.png"></div>
-                                    <span class="availability">in stock</span>
-                                </div>
-                                <img class="product-img cursor-pointer" src="images/lap-5.png" alt="">
-                                <div class="product-reviews flex-center">
-                                    <div class="stars flex-center">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/grey-star.png" alt="">
-                                    </div>
-                                    <span class="font-size-12 text-grey">Reviews (4)</span>
-                                </div>
-                                <p class="font-size-13">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                                <div class="price">
-                                    <del class="d-block">$499.00</del>
-                                    <strong>$499.00</strong>
-                                </div>
-                                <img class="heart visibility-hidden absolute cursor-pointer scale" src="images/heart.png" alt="">
-                                <img class="stats visibility-hidden absolute cursor-pointer scale" src="images/stats.png" alt="">
-                                <button class="product-cart white-btn transition-03s bg-white visibility-hidden flex-center-center cursor-pointer scale">
-                                
-                                Add To Cart
-                                </button>
-                            </div>
-                            <div class="product-card cursor-pointer relative">
-                                <div class="in-stock flex-center ">
-                                    <div class="circle flex-center-center"><img src="images/check.png"></div>
-                                    <span class="availability">in stock</span>
-                                </div>
-                                <img class="product-img cursor-pointer" src="images/lap-6.png" alt="">
-                                <div class="product-reviews flex-center">
-                                    <div class="stars flex-center">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/grey-star.png" alt="">
-                                    </div>
-                                    <span class="font-size-12 text-grey">Reviews (4)</span>
-                                </div>
-                                <p class="font-size-13">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                                <div class="price">
-                                    <del class="d-block">$499.00</del>
-                                    <strong>$499.00</strong>
-                                </div>
-                                <img class="heart visibility-hidden absolute cursor-pointer scale" src="images/heart.png" alt="">
-                                <img class="stats visibility-hidden absolute cursor-pointer scale" src="images/stats.png" alt="">
-                                <button class="product-cart white-btn transition-03s bg-white visibility-hidden flex-center-center cursor-pointer scale">
-                                
-                                Add To Cart
-                                </button>
-                            </div>
-                            <div class="product-card cursor-pointer relative">
-                                <div class="in-stock flex-center ">
-                                    <div class="circle flex-center-center"><img src="images/check.png"></div>
-                                    <span class="availability">in stock</span>
-                                </div>
-                                <img class="product-img cursor-pointer" src="images/lap-7.png" alt="">
-                                <div class="product-reviews flex-center">
-                                    <div class="stars flex-center">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/grey-star.png" alt="">
-                                    </div>
-                                    <span class="font-size-12 text-grey">Reviews (4)</span>
-                                </div>
-                                <p class="font-size-13">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                                <div class="price">
-                                    <del class="d-block">$499.00</del>
-                                    <strong>$499.00</strong>
-                                </div>
-                                <img class="heart visibility-hidden absolute cursor-pointer scale" src="images/heart.png" alt="">
-                                <img class="stats visibility-hidden absolute cursor-pointer scale" src="images/stats.png" alt="">
-                                <button class="product-cart white-btn transition-03s bg-white visibility-hidden flex-center-center cursor-pointer scale">
-                                
-                                Add To Cart
-                                </button>
-                            </div>
-                            <div class="product-card cursor-pointer relative tablet-hide">
-                                <div class="in-stock flex-center ">
-                                    <div class="circle flex-center-center"><img src="images/check.png"></div>
-                                    <span class="availability">in stock</span>
-                                </div>
-                                <img class="product-img cursor-pointer" src="images/lap-7.png" alt="">
-                                <div class="product-reviews flex-center">
-                                    <div class="stars flex-center">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/grey-star.png" alt="">
-                                    </div>
-                                    <span class="font-size-12 text-grey">Reviews (4)</span>
-                                </div>
-                                <p class="font-size-13">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                                <div class="price">
-                                    <del class="d-block">$499.00</del>
-                                    <strong>$499.00</strong>
-                                </div>
-                                <img class="heart visibility-hidden absolute cursor-pointer scale" src="images/heart.png" alt="">
-                                <img class="stats visibility-hidden absolute cursor-pointer scale" src="images/stats.png" alt="">
-                                <button class="product-cart white-btn transition-03s bg-white visibility-hidden flex-center-center cursor-pointer scale">
-                                
-                                Add To Cart
-                                </button>
-                            </div>
-                            <div class="product-card cursor-pointer relative">
-                                <div class="in-stock flex-center ">
-                                    <div class="circle flex-center-center"><img src="images/check.png"></div>
-                                    <span class="availability">in stock</span>
-                                </div>
-                                <img class="product-img cursor-pointer" src="images/lap-8.png" alt="">
-                                <div class="product-reviews flex-center">
-                                    <div class="stars flex-center">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/grey-star.png" alt="">
-                                    </div>
-                                    <span class="font-size-12 text-grey">Reviews (4)</span>
-                                </div>
-                                <p class="font-size-13">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                                <div class="price">
-                                    <del class="d-block">$499.00</del>
-                                    <strong>$499.00</strong>
-                                </div>
-                                <img class="heart visibility-hidden absolute cursor-pointer scale" src="images/heart.png" alt="">
-                                <img class="stats visibility-hidden absolute cursor-pointer scale" src="images/stats.png" alt="">
-                                <button class="product-cart white-btn transition-03s bg-white visibility-hidden flex-center-center cursor-pointer scale">
-                                
-                                Add To Cart
-                                </button>
-                            </div>
-                            <div class="product-card cursor-pointer relative">
-                                <div class="in-stock flex-center ">
-                                    <div class="circle flex-center-center"><img src="images/check.png"></div>
-                                    <span class="availability">in stock</span>
-                                </div>
-                                <img class="product-img cursor-pointer" src="images/lap-1.png" alt="">
-                                <div class="product-reviews flex-center">
-                                    <div class="stars flex-center">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/grey-star.png" alt="">
-                                    </div>
-                                    <span class="font-size-12 text-grey">Reviews (4)</span>
-                                </div>
-                                <p class="font-size-13">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                                <div class="price">
-                                    <del class="d-block">$499.00</del>
-                                    <strong>$499.00</strong>
-                                </div>
-                                <img class="heart visibility-hidden absolute cursor-pointer scale" src="images/heart.png" alt="">
-                                <img class="stats visibility-hidden absolute cursor-pointer scale" src="images/stats.png" alt="">
-                                <button class="product-cart white-btn transition-03s bg-white visibility-hidden flex-center-center cursor-pointer scale">
-                                
-                                Add To Cart
-                                </button>
-                            </div>
-                            <div class="product-card cursor-pointer relative">
-                                <div class="in-stock flex-center ">
-                                    <div class="circle flex-center-center"><img src="images/check.png"></div>
-                                    <span class="availability">in stock</span>
-                                </div>
-                                <img class="product-img cursor-pointer" src="images/lap-9.png" alt="">
-                                <div class="product-reviews flex-center">
-                                    <div class="stars flex-center">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/grey-star.png" alt="">
-                                    </div>
-                                    <span class="font-size-12 text-grey">Reviews (4)</span>
-                                </div>
-                                <p class="font-size-13">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                                <div class="price">
-                                    <del class="d-block">$499.00</del>
-                                    <strong>$499.00</strong>
-                                </div>
-                                <img class="heart visibility-hidden absolute cursor-pointer scale" src="images/heart.png" alt="">
-                                <img class="stats visibility-hidden absolute cursor-pointer scale" src="images/stats.png" alt="">
-                                <button class="product-cart white-btn transition-03s bg-white visibility-hidden flex-center-center cursor-pointer scale">
-                                
-                                Add To Cart
-                                </button>
-                            </div>
-                            <div class="product-card cursor-pointer relative">
-                                <div class="in-stock flex-center ">
-                                    <div class="circle flex-center-center"><img src="images/check.png"></div>
-                                    <span class="availability">in stock</span>
-                                </div>
-                                <img class="product-img cursor-pointer" src="images/lap-10.png" alt="">
-                                <div class="product-reviews flex-center">
-                                    <div class="stars flex-center">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/grey-star.png" alt="">
-                                    </div>
-                                    <span class="font-size-12 text-grey">Reviews (4)</span>
-                                </div>
-                                <p class="font-size-13">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                                <div class="price">
-                                    <del class="d-block">$499.00</del>
-                                    <strong>$499.00</strong>
-                                </div>
-                                <img class="heart visibility-hidden absolute cursor-pointer scale" src="images/heart.png" alt="">
-                                <img class="stats visibility-hidden absolute cursor-pointer scale" src="images/stats.png" alt="">
-                                <button class="product-cart white-btn transition-03s bg-white visibility-hidden flex-center-center cursor-pointer scale">
-                                
-                                Add To Cart
-                                </button>
-                            </div>
-                            <div class="product-card cursor-pointer relative">
-                                <div class="in-stock flex-center ">
-                                    <div class="circle flex-center-center"><img src="images/check.png"></div>
-                                    <span class="availability">in stock</span>
-                                </div>
-                                <img class="product-img cursor-pointer" src="images/lap-2.png" alt="">
-                                <div class="product-reviews flex-center">
-                                    <div class="stars flex-center">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/grey-star.png" alt="">
-                                    </div>
-                                    <span class="font-size-12 text-grey">Reviews (4)</span>
-                                </div>
-                                <p class="font-size-13">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                                <div class="price">
-                                    <del class="d-block">$499.00</del>
-                                    <strong>$499.00</strong>
-                                </div>
-                                <img class="heart visibility-hidden absolute cursor-pointer scale" src="images/heart.png" alt="">
-                                <img class="stats visibility-hidden absolute cursor-pointer scale" src="images/stats.png" alt="">
-                                <button class="product-cart white-btn transition-03s bg-white visibility-hidden flex-center-center cursor-pointer scale">
-                                
-                                Add To Cart
-                                </button>
-                            </div>
-                            <div class="product-card cursor-pointer relative tablet-hide">
-                                <div class="in-stock flex-center ">
-                                    <div class="circle flex-center-center"><img src="images/check.png"></div>
-                                    <span class="availability">in stock</span>
-                                </div>
-                                <img class="product-img cursor-pointer" src="images/lap-3.png" alt="">
-                                <div class="product-reviews flex-center">
-                                    <div class="stars flex-center">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/grey-star.png" alt="">
-                                    </div>
-                                    <span class="font-size-12 text-grey">Reviews (4)</span>
-                                </div>
-                                <p class="font-size-13">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                                <div class="price">
-                                    <del class="d-block">$499.00</del>
-                                    <strong>$499.00</strong>
-                                </div>
-                                <img class="heart visibility-hidden absolute cursor-pointer scale" src="images/heart.png" alt="">
-                                <img class="stats visibility-hidden absolute cursor-pointer scale" src="images/stats.png" alt="">
-                                <button class="product-cart white-btn transition-03s bg-white visibility-hidden flex-center-center cursor-pointer scale">
-                                
-                                Add To Cart
-                                </button>
-                            </div>
-                            <div class="product-card cursor-pointer relative mobile-hide">
-                                <div class="in-stock flex-center ">
-                                    <div class="circle flex-center-center"><img src="images/check.png"></div>
-                                    <span class="availability">in stock</span>
-                                </div>
-                                <img class="product-img cursor-pointer" src="images/lap-1.png" alt="">
-                                <div class="product-reviews flex-center">
-                                    <div class="stars flex-center">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/grey-star.png" alt="">
-                                    </div>
-                                    <span class="font-size-12 text-grey">Reviews (4)</span>
-                                </div>
-                                <p class="font-size-13">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                                <div class="price">
-                                    <del class="d-block">$499.00</del>
-                                    <strong>$499.00</strong>
-                                </div>
-                                <img class="heart visibility-hidden absolute cursor-pointer scale" src="images/heart.png" alt="">
-                                <img class="stats visibility-hidden absolute cursor-pointer scale" src="images/stats.png" alt="">
-                                <button class="product-cart white-btn transition-03s bg-white visibility-hidden flex-center-center cursor-pointer scale">
-                                
-                                Add To Cart
-                                </button>
-                            </div>
-                            <div class="product-card cursor-pointer relative mobile-hide">
-                                <div class="in-stock flex-center ">
-                                    <div class="circle flex-center-center"><img src="images/check.png"></div>
-                                    <span class="availability">in stock</span>
-                                </div>
-                                <img class="product-img cursor-pointer" src="images/lap-2.png" alt="">
-                                <div class="product-reviews flex-center">
-                                    <div class="stars flex-center">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/grey-star.png" alt="">
-                                    </div>
-                                    <span class="font-size-12 text-grey">Reviews (4)</span>
-                                </div>
-                                <p class="font-size-13">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                                <div class="price">
-                                    <del class="d-block">$499.00</del>
-                                    <strong>$499.00</strong>
-                                </div>
-                                <img class="heart visibility-hidden absolute cursor-pointer scale" src="images/heart.png" alt="">
-                                <img class="stats visibility-hidden absolute cursor-pointer scale" src="images/stats.png" alt="">
-                                <button class="product-cart white-btn transition-03s bg-white visibility-hidden flex-center-center cursor-pointer scale">
-                                
-                                Add To Cart
-                                </button>
-                            </div>
-                            <div class="product-card cursor-pointer relative mobile-hide">
-                                <div class="in-stock flex-center ">
-                                    <div class="circle flex-center-center"><img src="images/check.png"></div>
-                                    <span class="availability">in stock</span>
-                                </div>
-                                <img class="product-img cursor-pointer" src="images/lap-3.png" alt="">
-                                <div class="product-reviews flex-center">
-                                    <div class="stars flex-center">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/grey-star.png" alt="">
-                                    </div>
-                                    <span class="font-size-12 text-grey">Reviews (4)</span>
-                                </div>
-                                <p class="font-size-13">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                                <div class="price">
-                                    <del class="d-block">$499.00</del>
-                                    <strong>$499.00</strong>
-                                </div>
-                                <img class="heart visibility-hidden absolute cursor-pointer scale" src="images/heart.png" alt="">
-                                <img class="stats visibility-hidden absolute cursor-pointer scale" src="images/stats.png" alt="">
-                                <button class="product-cart white-btn transition-03s bg-white visibility-hidden flex-center-center cursor-pointer scale">
-                                
-                                Add To Cart
-                                </button>
-                            </div>
-                            <div class="product-card cursor-pointer relative tablet-hide">
-                                <div class="in-stock flex-center ">
-                                    <div class="circle flex-center-center"><img src="images/check.png"></div>
-                                    <span class="availability">in stock</span>
-                                </div>
-                                <img class="product-img cursor-pointer" src="images/lap-4.png" alt="">
-                                <div class="product-reviews flex-center">
-                                    <div class="stars flex-center">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/grey-star.png" alt="">
-                                    </div>
-                                    <span class="font-size-12 text-grey">Reviews (4)</span>
-                                </div>
-                                <p class="font-size-13">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                                <div class="price">
-                                    <del class="d-block">$499.00</del>
-                                    <strong>$499.00</strong>
-                                </div>
-                                <img class="heart visibility-hidden absolute cursor-pointer scale" src="images/heart.png" alt="">
-                                <img class="stats visibility-hidden absolute cursor-pointer scale" src="images/stats.png" alt="">
-                                <button class="product-cart white-btn transition-03s bg-white visibility-hidden flex-center-center cursor-pointer scale">
-                                
-                                Add To Cart
-                                </button>
-                            </div>
-                            <div class="product-card cursor-pointer relative tablet-hide">
-                                <div class="in-stock flex-center ">
-                                    <div class="circle flex-center-center"><img src="images/check.png"></div>
-                                    <span class="availability">in stock</span>
-                                </div>
-                                <img class="product-img cursor-pointer" src="images/lap-5.png" alt="">
-                                <div class="product-reviews flex-center">
-                                    <div class="stars flex-center">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/golden-star.png" alt="">
-                                        <img src="images/grey-star.png" alt="">
-                                    </div>
-                                    <span class="font-size-12 text-grey">Reviews (4)</span>
-                                </div>
-                                <p class="font-size-13">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                                <div class="price">
-                                    <del class="d-block">$499.00</del>
-                                    <strong>$499.00</strong>
-                                </div>
-                                <img class="heart visibility-hidden absolute cursor-pointer scale" src="images/heart.png" alt="">
-                                <img class="stats visibility-hidden absolute cursor-pointer scale" src="images/stats.png" alt="">
-                                <button class="product-cart white-btn transition-03s bg-white visibility-hidden flex-center-center cursor-pointer scale">
-                                
-                                Add To Cart
-                                </button>
-                            </div>
-                        </div>          
-                        <div class="pagination">
-                            <ul class="flex-center-center">
-                                <li class="pagination-link"><a class="pagination-anchor font-size-13 semi-bold flex-center-center transition-03s" href="#">&lt;</a></li>
-                                <li class="pagination-link"><a class="pagination-anchor font-size-13 semi-bold flex-center-center transition-03s" href="#">1</a></li>
-                                <li class="pagination-link"><a class="pagination-anchor font-size-13 semi-bold flex-center-center transition-03s" href="#">2</a></li>
-                                <li class="pagination-link"><a class="pagination-anchor font-size-13 semi-bold flex-center-center transition-03s" href="#">3</a></li>
-                                <li class="pagination-link"><a class="pagination-anchor font-size-13 semi-bold flex-center-center transition-03s" href="#">...</a></li>
-                                <li class="pagination-link"><a class="pagination-anchor font-size-13 semi-bold flex-center-center transition-03s" href="#">15</a></li>
-                                <li class="pagination-link"><a class="pagination-anchor font-size-13 semi-bold flex-center-center transition-03s" href="#">&gt;</a></li>
-                            </ul>
+                        <div class="cart-buttons-holder flex-center">
+                            <button class="continue-shopping-btn grey-btn btn-shape font-size-14 semi-bold d-block mobile-hide">Continue Shopping</button>
+                            <button class="btn-shape font-size-14 bg-black text-white semi-bold d-block no-border scale transition-03s mobile-hide">Clear Shopping Cart</button>
+                            <button class="update-shopping-btn btn-shape font-size-14 bg-black text-white semi-bold d-block no-border scale transition-03s">Update Shopping Cart</button>
                         </div>
                     </div>
-                    <div class="long-paragraph-holder flex-column">
-                        <label for="more-btn" class="more-btn font-size-11 semi-bold text-grey d-block transition-03s d-block cursor-pointer" href="#">More</label>
-                        <input type="checkbox" name="more-btn" id="more-btn" class="more-input display-none">
-                        <div class="long-paragraph relative">
-                            <p class="font-size-12">
-                                MSI has unveiled the Prestige Series line of business-class and gaming notebooks. Tuned for color accuracy, the Prestige Series also leverages True Color Technology, which allows users to adjust the display profile to best fit their computing needs.
-                                <br>
-                                <br>
-                                There are six different screen profiles, which are tuned for gaming, reducing eye fatigue, sRGB color accuracy, increasing clarity for words and lines, reducing harmful blue light, and optimizing contrast for watching movies.
-                            </p>
-                            <p class="font-size-12 tablet-hide">
-                                Given the various display profiles and discrete graphics chip, the Prestige Series notebooks can be used for various design work as well as for office tasks given that the screen can be adjusted for better clarity, color accuracy, or for eye strain reduction. Users working with video or 3D rendering will appreciate the "movie mode" for which contrast is increased.
-                                <br>
-                                <br>
-                                Home users or students can benefit from the "anti-blue" and the "office mode" options, both of which are designed to reduce eye strain. This is helpful when working on the computer for extended periods of time. Additionally, in their down time, students can also use the "gamer mode" to increase the screen brightness.
+                    <div class="summary light-bg">
+                        <h2 class="summary-title semi-bold">Summary</h2>
+                        <h3 class="summary-h3 font-size-18 normal flex-btwn-center cursor-pointer">Estimate Shipping and Tax</h3>
+                        <p class="summary-p font-size-14 text-grey">Enter your destination to get a shipping estimate.</p>
+                        <!-- country-input -->
+                        <label class="cart-label font-size-13 semi-bold d-block" for="country">Country</label>
+                        <select class="cart-input" name="country" id="country">
+                            <option value="1">Australia</option>
+                            <option value="2">Morocco</option>
+                            <option value="3">United States</option>
+                            <option value="4">United Kingdom</option>
+                        </select>
+                        <!-- state-input -->
+                        <label class="cart-label font-size-13 semi-bold d-block" for="state">State/Province</label>
+                        <input class="cart-input" type="text" name="state" id="state">
+                        <!-- zip-code-input -->
+                        <label class="cart-label font-size-13 semi-bold d-block" for="zip-code">Zip/Postal Code</label>
+                        <input class="cart-input" type="text" name="zip-code" id="zip-code">
+                        <!-- shipping-type-input -->
+                        <span class="cart-label font-size-13 semi-bold d-block">Standard Rate</span>
+                        <input class="cart-radio display-none" type="radio" name="shipping-choice" id="standard-rate" checked>
+                        <label class="radio-label font-size-14 cursor-pointer flex-start" for="standard-rate">Price may vary depending on the item/destination. Shop Staff will contact you. $21.00</label>
+                        <span class="cart-label font-size-13 semi-bold d-block">Pickup from store</span>
+                        <input class="cart-radio display-none" type="radio" name="shipping-choice" id="Pickup">
+                        <label class="radio-label font-size-14 cursor-pointer flex-start" for="Pickup">1234 Street Adress City Address, 1234 $0.00</label>
+                        <!-- discount-input -->
+                        <h3 class="summary-h3 font-size-18 normal flex-btwn-center cursor-pointer">Apply Discount Code</h3>
+                        <label class="cart-label font-size-13 semi-bold d-block" for="discount-code">Enter discount code</label>
+                        <input class="cart-input" type="text" name="discount-code" id="discount-code" placeholder="Enter Discount code">
+                        <button class="discount-btn btn-shape font-size-14 semi-bold d-block transition-03s text-blue">Apply Discount</button>
+                        <div class="total-holder flex-btwn-center">
+                            <span class="total-text font-size-13 semi-bold">Subtotal</span>
+                            <span class="total-text font-size-13 semi-bold">$13,047.00</span>
+                        </div>
+                        <div class="total-holder">
+                            <div class="flex-btwn-center">
+                                <span class="total-text font-size-13 semi-bold">Shipping </span>
+                                <span class="total-text font-size-13 semi-bold">$21.00</span>
+                            </div>
+                            <p class="shipping-p font-size-10 text-grey">(Standard Rate - Price may vary depending on the item/destination. Shop Staff will contact you.)</p>
+                        </div>
+                        <div class="total-holder flex-btwn-center">
+                            <span class="total-text font-size-13 semi-bold">Tax</span>
+                            <span class="total-text font-size-13 semi-bold">$1.91</span>
+                        </div>
+                        <div class="total-holder flex-btwn-center">
+                            <span class="total-text font-size-13 semi-bold">GST (10%)</span>
+                            <span class="total-text font-size-13 semi-bold">$1.91</span>
+                        </div>
+                        <div class="total-holder flex-btwn-center">
+                            <span class="total-text font-size-13 semi-bold">Order Total</span>
+                            <span class="total-price font-size-18 semi-bold">$13,068.00</span>
+                        </div>
+                        <a class="blue-btn btn-shape font-size-14 semi-bold flex-center-center scale transition-03s" href="#">Proceed to Checkout</a>
+                        <a class="yellow-btn btn-shape font-size-14 semi-bold flex-center-center scale transition-03s" href="#">Check out with <img src="images/paypal.png" alt=""></a>
+                        <button class="checkout-btn grey-btn btn-shape font-size-14 semi-bold d-block scale">Check Out with Multiple Addresses</button>
+                        <div class="cart-zip flex-center">
+                            <img class="zip-img" src="images/zip.png" alt="">
+                            <p class="cart-zip-p font-size-12 relative"><span class="semi-bold">own</span>  it now, up to 6 months interest free
+                            <a class="underline font-size-10 light text-black" href="">learn more</a>
                             </p>
                         </div>
                     </div>
-                </div> 
-            </div>    
+                </div>
+            </div>
             <section class="features-holder">
                 <div class="features container flex-start-center wrap text-center">
                     <div class="feature">
@@ -1682,4 +1098,4 @@
             </div>
         </footer>
     </body>
-</html>    
+</html>   

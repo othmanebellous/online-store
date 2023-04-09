@@ -229,6 +229,9 @@ input[type="radio"]:checked + label{
 
 .long-paragraph{
     color: #8C8C8C;
+    max-height: 185px;
+overflow: hidden;
+transition: max-height 0.3s ease-in;
 }
 
 .long-paragraph::after{
@@ -239,6 +242,8 @@ input[type="radio"]:checked + label{
     top: 0;
     left: 0;
     background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
 }
 
 .more-btn{
@@ -256,8 +261,14 @@ input[type="radio"]:checked + label{
     transition: 0.3s;
 }
 
+.more-input:checked + .long-paragraph{
+    max-height: 190px;
+    transition: max-height 0.3s ease-out;
+}
+
 .more-input:checked + .long-paragraph::after{
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
 }
 
 .features-holder{
@@ -368,6 +379,14 @@ input[type="radio"]:checked + label{
         padding-left: 2px;
     }
 
+    .long-paragraph {
+        max-height: 151px;
+      }
+
+      .more-input:checked + .long-paragraph{
+        max-height: 342px;
+    }
+
     .more-btn{
         font-size: 11px;
         margin: 12px auto 0;
@@ -449,8 +468,12 @@ input[type="radio"]:checked + label{
         margin-top: 20px;
     }
 
-    .long-paragraph .tablet-hide{
-        display: block;
+    .long-paragraph {
+        max-height: 464px;
+      }
+
+      .more-input:checked + .long-paragraph{
+        max-height: 475px;
     }
 
     .features-holder{

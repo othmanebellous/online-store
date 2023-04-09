@@ -106,6 +106,10 @@
     color: #A2A6B0;
   }
 
+  .text-dark-grey{
+    color: #666666;
+  }
+
   /* ---------font-weight-------- */
 
   .light{
@@ -144,6 +148,10 @@
 
   .font-size-14{
     font-size: 14px;
+  }
+
+  .font-size-15{
+    font-size: 15px;
   }
 
   .font-size-16{

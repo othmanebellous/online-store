@@ -255,6 +255,11 @@ transition: max-height 0.3s ease-in;
     order: 2;
 }
 
+.more-btn::before{
+    content: "More";
+    transition: 0.3s;
+}
+
 .more-btn:hover{
     background-color: #A2A6B0;
     color: #FFF;
@@ -262,13 +267,17 @@ transition: max-height 0.3s ease-in;
 }
 
 .more-input:checked + .long-paragraph{
-    max-height: 190px;
+    max-height: 324px;
     transition: max-height 0.3s ease-out;
 }
 
 .more-input:checked + .long-paragraph::after{
     opacity: 0;
-    transition: opacity 0.3s ease-out;
+    transition: opacity 0.5s ease-out;
+}
+
+.more-input:checked ~ .more-btn::before{
+    content: "Less";
 }
 
 .features-holder{
@@ -473,7 +482,7 @@ transition: max-height 0.3s ease-in;
       }
 
       .more-input:checked + .long-paragraph{
-        max-height: 475px;
+        max-height: 882px;
     }
 
     .features-holder{
